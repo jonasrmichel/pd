@@ -65,6 +65,27 @@ Each panelist runs as its own subagent and never sees the others' answers. Claud
 where they **agree**, where they **clash** (and what would settle it), **blind spots**, and the
 **top 3 next actions**.
 
+## What this plugin runs
+
+Everything runs inside Claude Code. The plugin makes no network requests, sends nothing to
+third parties, collects no personal data, and runs no shell commands or scripts.
+
+- **Skills** (`skills/`): Markdown instructions only. A persona may read files you reference
+  (a PRD, a spec, a diff) to ground its feedback. No skill asks Claude to change files.
+- **Panel subagents**: `/pd:panel` starts one Claude Code subagent per persona, in parallel.
+  Each reads its persona's `SKILL.md` and any files you referenced, is told not to modify
+  anything, and returns text to the main session.
+- **Hooks module** (`hooks/register.tsx`, a Claude Code mod): runs inside Claude Code and calls
+  only its plugin-state and UI APIs, never the file, network or process APIs (`claude plugin
+  validate .` lists every call). It hooks three events:
+  - `command.run`: when a `/pd:` skill is run without an idea, it answers itself instead of
+    calling the model, and remembers which skill is waiting.
+  - `prompt.submit`: on your next message, it attaches a note telling Claude to run that skill
+    with your message as the input. Your message itself is not changed.
+  - `ui.render` (`AbovePrompt`): draws the 🎭 band with a Cancel button while a skill waits.
+
+  The only thing it stores is which skill is waiting, in Claude Code's per-session plugin state.
+
 ## Layout
 
 ```
@@ -80,6 +101,7 @@ hooks/
   register.tsx         # bare /pd:<skill> → wait for the next message (with a band above the prompt)
   register.test.ts     # its tests: `claude plugin test .`
 types/index.d.ts       # the hooks module's state contract
+LICENSE                # MIT
 ```
 
 ## Customizing
@@ -92,3 +114,7 @@ types/index.d.ts       # the hooks module's state contract
   frontmatter.
 
 Check your changes with `claude plugin validate .`.
+
+## License
+
+[MIT](LICENSE)
