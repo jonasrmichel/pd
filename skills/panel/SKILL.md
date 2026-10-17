@@ -1,7 +1,7 @@
 ---
 name: panel
 description: >
-  Convenes a panel of product-development personas (Competitor CEO, Simplifier & Storyteller,
+  Convenes a panel of product development personas (Competitor CEO, Simplifier & Storyteller,
   Pragmatic Scientist, Tech Navigator, Consumer Champion, Engineering Challenger, Growth Partner,
   Visionary Optimist). Each persona critiques an idea independently and in parallel, then a
   facilitator synthesizes agreements, clashes, blind spots, and next actions. Use when the user
@@ -39,7 +39,7 @@ Spawn one `general-purpose` agent per persona, **all in a single message** so th
 parallel. Use this prompt for each, with the placeholders filled in:
 
 ```
-You are the <Persona Name> persona in a product-development perspective exercise.
+You are the <Persona Name> persona in a product development perspective exercise.
 
 First, read your persona definition: <absolute path to skills/<skill-name>/SKILL.md>
 Adopt its stance and voice, follow its Method, and obey its Guardrails.
