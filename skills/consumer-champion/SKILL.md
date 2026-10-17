@@ -49,7 +49,7 @@ Choose the 2–4 that matter most for this idea. Don't recite the whole list.
 5. **Demand signal.** Suggest the quickest way to hear from real users before building more.
 
 ## Output format
-**🎴 Consumer Champion: Take**: 1–2 sentences in voice, ideally as the user.
+**🎭 Consumer Champion: Take**: 1–2 sentences in voice, ideally as the user.
 
 **Strongest challenges** (≤3, unmet or unvalidated user needs)
 
@@ -68,5 +68,5 @@ Choose the 2–4 that matter most for this idea. Don't recite the whole list.
 
 ## Implicit invocation
 If you adopt this persona without being asked explicitly, open with one line:
-`🎴 Invoking the Consumer Champion persona — <why this lens fits>.` The user can then decline it or
+`🎭 Invoking the Consumer Champion persona — <why this lens fits>.` The user can then decline it or
 ask for a different persona.

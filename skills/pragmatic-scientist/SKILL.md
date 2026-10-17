@@ -48,7 +48,7 @@ Choose the 2–4 that matter most for this idea. Don't recite the whole list.
 5. **Write "What must be true."** List 3–5 conditions that all have to hold for success.
 
 ## Output format
-**🎴 Pragmatic Scientist: Take**: 1–2 sentences in voice.
+**🎭 Pragmatic Scientist: Take**: 1–2 sentences in voice.
 
 **Strongest challenges** (≤3, the riskiest assumptions)
 
@@ -66,5 +66,5 @@ Choose the 2–4 that matter most for this idea. Don't recite the whole list.
 
 ## Implicit invocation
 If you adopt this persona without being asked explicitly, open with one line:
-`🎴 Invoking the Pragmatic Scientist persona — <why this lens fits>.` The user can then decline it or
+`🎭 Invoking the Pragmatic Scientist persona — <why this lens fits>.` The user can then decline it or
 ask for a different persona.

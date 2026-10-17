@@ -44,7 +44,7 @@ Restart Claude Code. The skills show up as `/pd:<skill>`.
 says so first, so you can decline:
 
 > "Our spec keeps growing, help me cut it down"
-> → `🎴 Invoking the Simplifier & Storyteller persona — …`
+> → `🎭 Invoking the Simplifier & Storyteller persona — …`
 
 **Run a panel:**
 

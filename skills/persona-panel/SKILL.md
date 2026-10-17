@@ -61,7 +61,7 @@ Don't tell any panelist what the others think. Independence is the point.
 ## 4. Synthesize
 Once every panelist has responded, write the result in this shape:
 
-### 🎴 Panel: <short idea name>
+### 🎭 Panel: <short idea name>
 **Panelists:** <list>
 
 **Where perspectives agree**: the 2–4 strongest signals that more than one persona raised, from
