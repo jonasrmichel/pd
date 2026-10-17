@@ -1,0 +1,15 @@
+{
+  "name": "pd",
+  "description": "Product-development perspective cards for Claude Code.",
+  "owner": {
+    "name": "Jonas Michel",
+    "email": "jonasrmichel@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "pd",
+      "source": "./",
+      "description": "Product-development perspective cards as Claude Code skills."
+    }
+  ]
+}
