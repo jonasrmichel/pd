@@ -3,7 +3,7 @@
 Use this index to pick personas for a panel. Each persona's full definition lives in
 `../<skill-name>/SKILL.md`, which is the single source of truth.
 
-| Skill name | Persona | Core question | Play when… |
+| Skill name | Persona | Core question | Invoke when… |
 |---|---|---|---|
 | `competitor-ceo` | Competitor CEO | Why should I worry? | Idea feels like a winner; need differentiation, a moat, or prep for tough questions |
 | `simplifier-storyteller` | Simplifier & Storyteller | What could you remove and still keep the magic? | Too complicated; feature creep; pitch prep; inconsistent narrative |

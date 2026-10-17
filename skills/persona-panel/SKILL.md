@@ -24,7 +24,7 @@ Arguments: `$ARGUMENTS`
 - If the first token is a comma-separated list of skill names (for example
   `competitor-ceo,consumer-champion`), convene exactly those.
 - Otherwise, **auto-select 3–4 personas** using [personas.md](personas.md). Match the situation
-  against "Play when…" and the default panels, and **include at least one natural-tension pair**.
+  against "Invoke when…" and the default panels, and **include at least one natural-tension pair**.
   Tell the user in one line which personas you chose and why.
 - The rest is the idea under review. If it references files, a PRD, a diff, or a URL, read them
   first. If there's no idea at all, ask the user for one before continuing.
@@ -39,7 +39,7 @@ Spawn one `general-purpose` agent per persona, **all in a single message** so th
 parallel. Use this prompt for each, with the placeholders filled in:
 
 ```
-You are playing the <Persona Name> card in a product-development perspective exercise.
+You are the <Persona Name> persona in a product-development perspective exercise.
 
 First, read your persona definition: <absolute path to skills/<skill-name>/SKILL.md>
 Adopt its stance and voice, follow its Method, and obey its Guardrails.
@@ -50,7 +50,7 @@ THE BRIEF:
 
 Respond ONLY with your persona's Output format (Take, Strongest challenges, Questions you must
 answer, One constructive move). Keep it under 250 words. Do not mention other personas
-except in a final one-line "Play next:" suggestion.
+except in a final one-line "Invoke next:" suggestion.
 ```
 
 To get the absolute path to a persona file, resolve `../<skill-name>/SKILL.md` relative to this
@@ -71,7 +71,7 @@ different angles. Name which personas raised each one.
 **what would resolve it**, such as a fact to learn, an experiment, or a decision to make.
 
 **Blind spots**: lenses that weren't on the panel and might matter. Give one line each, and
-suggest which card to play next.
+suggest which persona to invoke next.
 
 **Top 3 next actions** (ranked, concrete, each traced to the personas who motivated it)
 

@@ -7,7 +7,7 @@ skill runs several personas in parallel and pulls their views together.
 
 ## Personas
 
-| Skill | Persona | Perspective they bring | Play this card when… |
+| Skill | Persona | Perspective they bring | Invoke this persona when… |
 |---|---|---|---|
 | `competitor-ceo` | Competitor CEO | *Why should I worry?* | You think you have a winning idea; need sharper differentiation; are preparing for tough questions |
 | `simplifier-storyteller` | Simplifier & Storyteller | *What could you remove and still keep the magic?* | The idea has become too complicated; features keep piling up; you're preparing a pitch |
@@ -19,7 +19,7 @@ skill runs several personas in parallel and pulls their views together.
 | `visionary-optimist` | Visionary Optimist | *What could this become?* | The idea feels incremental or safe; you're stuck inside current constraints |
 
 Every persona answers in the same shape: **Take**, **Strongest challenges**, **Questions you
-must answer**, and **One constructive move**. Each one also suggests an opposing persona to play
+must answer**, and **One constructive move**. Each one also suggests an opposing persona to invoke
 next (for example Visionary Optimist ↔ Pragmatic Scientist).
 
 ## Install
@@ -40,11 +40,11 @@ Restart Claude Code. The skills show up as `/pd:<skill>`.
 /pd:simplifier-storyteller docs/prd.md
 ```
 
-**Let Claude pick one:** describe the situation and Claude plays the matching card. It always
+**Let Claude pick one:** describe the situation and Claude invokes the matching persona. It always
 says so first, so you can decline:
 
 > "Our spec keeps growing, help me cut it down"
-> → `🎴 Playing the Simplifier & Storyteller card — …`
+> → `🎴 Invoking the Simplifier & Storyteller persona — …`
 
 **Run a panel:**
 
