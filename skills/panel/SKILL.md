@@ -1,5 +1,5 @@
 ---
-name: persona-panel
+name: panel
 description: >
   Convenes a panel of product-development personas (Competitor CEO, Simplifier & Storyteller,
   Pragmatic Scientist, Tech Navigator, Consumer Champion, Engineering Challenger, Growth Partner,

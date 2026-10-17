@@ -49,9 +49,9 @@ says so first, so you can decline:
 **Run a panel:**
 
 ```
-/pd:persona-panel <idea or path>                               # picks 3–4 personas, incl. at least one opposing pair
-/pd:persona-panel competitor-ceo,consumer-champion <idea>      # the personas you list
-/pd:persona-panel all <idea>                                   # all eight
+/pd:panel <idea or path>                               # picks 3–4 personas, incl. at least one opposing pair
+/pd:panel competitor-ceo,consumer-champion <idea>      # the personas you list
+/pd:panel all <idea>                                   # all eight
 ```
 
 Each panelist runs as its own subagent and never sees the others' answers. Claude then writes up
@@ -66,7 +66,7 @@ where they **agree**, where they **clash** (and what would settle it), **blind s
   marketplace.json     # lets the repo itself be added as a marketplace
 skills/
   <persona>/SKILL.md   # one file per persona; each is the only place that persona is defined
-  persona-panel/
+  panel/
     SKILL.md           # how the panel runs and how answers are combined
     personas.md        # list of personas, opposing pairs, default panels by artifact type
 ```
@@ -76,7 +76,7 @@ skills/
 - **Change a persona:** edit `skills/<persona>/SKILL.md`. The panel reads these files directly,
   so your change applies everywhere.
 - **Add a persona:** create `skills/<new-persona>/SKILL.md` with the same structure as the
-  others, then add a row to `skills/persona-panel/personas.md`.
+  others, then add a row to `skills/panel/personas.md`.
 - **Change when Claude picks a persona on its own:** edit the `description` in the skill's
   frontmatter.
 
