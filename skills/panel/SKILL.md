@@ -27,7 +27,8 @@ Arguments: `$ARGUMENTS`
   against "Invoke when…" and the default panels, and **include at least one natural-tension pair**.
   Tell the user in one line which personas you chose and why.
 - The rest is the idea under review. If it references files, a PRD, a diff, or a URL, read them
-  first. If there's no idea at all, ask the user for one before continuing.
+  first. If there's no idea at all, reply with one line, `🎭 Persona Panel is listening. What's
+  the idea?`, and stop. Treat the user's next message as the idea, keeping any persona selection.
 
 ## 2. Frame the idea
 Write a **brief** of 3–6 sentences: what the idea is, who it's for, its current stage, and any

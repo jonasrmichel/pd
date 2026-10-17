@@ -40,6 +40,11 @@ Restart Claude Code. The skills show up as `/pd:<skill>`.
 /pd:simplifier-storyteller docs/prd.md
 ```
 
+**Or run it bare and write at length**, like `/plan`: `/pd:competitor-ceo` on its own answers at
+once without calling the model, shows a 🎭 band above the prompt, and sends your next message
+(as long as you like: paste a doc, reference files) to that persona. Run the same command again,
+or press **Cancel** on the band, to back out.
+
 **Let Claude pick one:** describe the situation and Claude invokes the matching persona. It always
 says so first, so you can decline:
 
@@ -52,6 +57,8 @@ says so first, so you can decline:
 /pd:panel <idea or path>                               # picks 3–4 personas, incl. at least one opposing pair
 /pd:panel competitor-ceo,consumer-champion <idea>      # the personas you list
 /pd:panel all <idea>                                   # all eight
+/pd:panel                                              # bare: your next message is the idea
+/pd:panel all                                          # a selection with no idea works the same way
 ```
 
 Each panelist runs as its own subagent and never sees the others' answers. Claude then writes up
@@ -69,6 +76,10 @@ skills/
   panel/
     SKILL.md           # how the panel runs and how answers are combined
     personas.md        # list of personas, opposing pairs, default panels by artifact type
+hooks/
+  register.tsx         # bare /pd:<skill> → wait for the next message (with a band above the prompt)
+  register.test.ts     # its tests: `claude plugin test .`
+types/index.d.ts       # the hooks module's state contract
 ```
 
 ## Customizing
