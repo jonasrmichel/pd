@@ -1,7 +1,7 @@
 {
   "name": "pd",
-  "version": "0.2.0",
-  "description": "Product development perspective cards: eight personas that challenge ideas, give feedback, and offer alternative points of view, plus a panel that runs several in parallel and synthesizes them.",
+  "version": "0.2.1",
+  "description": "Eight product development personas that challenge ideas, give feedback, and offer alternative points of view, plus a panel that runs several in parallel and synthesizes them.",
   "author": {
     "name": "Jonas Michel",
     "email": "jonasrmichel@gmail.com"

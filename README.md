@@ -1,6 +1,6 @@
 # 🎭 pd
 
-A Claude Code plugin that turns eight product development "perspective cards" into personas.
+A Claude Code plugin with eight product development personas.
 You can call on a persona yourself, or Claude can pick one when the situation fits. Each persona
 gives feedback on your ideas, challenges them, and offers another point of view. A **panel**
 skill runs several personas in parallel and pulls their views together.
